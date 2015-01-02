@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel='stylesheet' href='calculator.css'/> 
+	
+	
+</head>
+<body> 
+	<div id="box">
+		<form name="input" class ="input">Bruto iznos: <input id="inputBruto" ></form>
+	
+		<form>
+			<select class = "drop" id = "djeca">
+				<option value="0">Broj djece</option>
+ 	 			<option value="1">0</option>
+  				<option value="2">1</option>
+  				<option value="3">2</option>
+			</select>	
+
+			<select class = "drop" id="prebivaliste">
+				<option value="0">Mjesto prebivališta (prirez)</option>
+	  			<option value="0.18">Zagreb</option>
+  				<option value="zupanja">Županja</option>
+  				<option value="audi">Audi</option>
+			</select>	
+		</form>
+
+		<button onclick="calculus()">Click me</button>
+
+		<div id="result"></div>
+		
+	</div>
+	
+	
+    <script src="calculator.js"></script>
+
+
+</body>
+</html>
