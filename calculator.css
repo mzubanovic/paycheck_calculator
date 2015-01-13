@@ -1,8 +1,15 @@
 #box{
 float:left;
-height: 200px;
+height: 600px;
 width: 30%;
 background-color: white;
+}
+#process{
+	padding: 6px;
+	height: 400px;
+	width: 98%; 
+
+	
 }
 
 #result{
@@ -27,4 +34,8 @@ button {
 
 body {
 	background-color: #D1D1E0;
+}
+#prebivaliste {
+	font-style: Times;
+
 }
