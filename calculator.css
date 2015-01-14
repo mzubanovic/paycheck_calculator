@@ -1,13 +1,14 @@
 #box{
 float:left;
-height: 600px;
+height: 147px;
 width: 30%;
 background-color: white;
 }
 #process{
 	padding: 6px;
-	height: 400px;
-	width: 98%; 
+	height: 100px;
+	width: 97%; 
+	background:rgba(255,255,255, 0.5);
 
 	
 }
