@@ -1,8 +1,13 @@
+body {
+	background-image: url('file:///home/marko/Pictures/calc.jpg');
+}
+
 #box{
 float:left;
 height: 147px;
 width: 30%;
 background-color: white;
+padding: 6px;
 }
 #process{
 	padding: 6px;
