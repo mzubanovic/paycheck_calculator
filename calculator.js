@@ -14,7 +14,13 @@ function calculus(){
 alert(dohodak);
 //	alert(doprinosi);
 
-	if (BrDjece == 1){
+
+	if (bruto < 3030){
+			var neto = dohodak;
+			var result = document.getElementById("result");
+			result.innerHTML = neto;
+
+	} else if (BrDjece == 1){
 
 		var osnovica_poreza0 = dohodak - 2600;
 		var osnovica_poreza0_P = document.getElementById("osnovica_poreza");
@@ -32,7 +38,7 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;	 
+			result.innerHTML += neto;	 
 			alert(neto);
 
 
@@ -48,7 +54,7 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;
+			result.innerHTML += neto;
 			
 		} else if (osnovica_poreza0 > 13200){
 			var porez_c = ((2200 * 12/100)+((osnovica_poreza0 - 2200) * 25/100)) + ((osnovica_poreza0 - 8800)*40/100);
@@ -62,13 +68,9 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;		
+			result.innerHTML += neto;		
 
-		} else if (osnovica_poreza0 < 1){
-			var neto = dohodak;
-			var result = document.getElementById("result");
-			result.innerHTML = neto;
-		}
+		} 
 	
 
 	
@@ -90,7 +92,7 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;	 
+			result.innerHTML += neto;	 
 			alert(neto);
 
 
@@ -106,7 +108,7 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;
+			result.innerHTML += neto;
 			
 		}else if (osnovica_poreza0 > 8800){
 			var porez_c = ((2200 * 12/100)+((osnovica_poreza0 - 2200) * 25/100)) + ((osnovica_poreza0 - 8800)*40/100);
@@ -120,12 +122,8 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;	
+			result.innerHTML += neto;	
 
-		}else if (osnovica_poreza0 < 1){
-			var neto = dohodak;
-			var result = document.getElementById("result");
-			result.innerHTML = neto;
 		}
 
 	}else if (BrDjece == 3){
@@ -145,7 +143,7 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;	 
+			result.innerHTML += neto;	 
 			alert(neto);
 
 
@@ -161,7 +159,7 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;
+			result.innerHTML += neto;
 			
 		}else if (osnovica_poreza0 > 8800){
 			var porez_c = ((2200 * 12/100)+((osnovica_poreza0 - 2200) * 25/100)) + ((osnovica_poreza0 - 8800)*40/100);
@@ -175,13 +173,9 @@ alert(dohodak);
 			porez_i_prirez_P.innerHTML += porez_i_prirez + " kn";
 
 			var result = document.getElementById("result");
-			result.innerHTML = neto;
+			result.innerHTML += neto;
 
-		} else if (osnovica_poreza0 < 1){
-			var neto = dohodak;
-			var result = document.getElementById("result");
-			result.innerHTML = neto;
-		}
+		} 
 	}
 
 

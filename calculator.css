@@ -1,5 +1,6 @@
 body {
 	background-image: url('file:///home/marko/Pictures/calc.jpg');
+	background-size: 100%;
 }
 
 #box{
@@ -10,7 +11,7 @@ background-color: white;
 padding: 6px;
 }
 #process{
-	padding: 6px;
+	padding: 8px;
 	height: 100px;
 	width: 97%; 
 	background:rgba(255,255,255, 0.5);
@@ -20,9 +21,8 @@ padding: 6px;
 
 #result{
 	height:20px;
-	width:20%;
-	padding: 2px;
-	border:2px solid black;
+	width:100%;
+	border-radius: 4px;
 	background-color: #ffffff;
 }
 
@@ -44,4 +44,13 @@ body {
 #prebivaliste {
 	font-style: Times;
 
+}
+input {
+	border-radius: 4px;
+}
+select {
+	border-radius: 4px;
+}
+button  {
+	border-radius: 4px;
 }
