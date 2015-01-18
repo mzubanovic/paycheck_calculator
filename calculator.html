@@ -4,6 +4,10 @@
 <head>
 
 	<link rel='stylesheet' href='calculator.css'/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 	
 	
 </head>
@@ -28,25 +32,29 @@
 		</form>
 
 
-		<button onclick="calculus()">Click me</button>
+		<button id="calc" onclick="calculus()">Click me</button>
 		<hr>
-		<div id="result">Neto: </div>
-		<hr>
-		<div id="process">
-			
-			<div id="doprinosi">Doprinosi: </div>
-			<div id="dohodak">Dohodak: </div>
-			<div id="osnovica_poreza">Osnovica poreza: </div>
-			<div id="porez">Porez: </div>
-			<div id="porez_i_prirez">Porez i prirez: </div>
-
+		<div>Neto: 
+			<div id="result"></div>
 		</div>
-		
-	</div>
-	
-	
+		<div id="process">
+			<div>Doprinosi: 
+				<div id="doprinosi" class="step" ></div>
+			</div>
+			<div>Dohodak: 
+				<div id="dohodak" class="step"></div>
+			</div>
+			<div>Osnovica poreza: 
+				<div id="osnovica_poreza" class="step"></div>
+			</div>
+			<div>Porez: 
+				<div id="porez" class="step"></div>
+			</div>
+			<div>Porez i prirez: 
+				<div id="porez_i_prirez" class="step"></div>
+			</div>
+		</div>	
+	</div>	
     <script src="calculator.js"></script>
-
-
 </body>
 </html>

@@ -4,26 +4,28 @@ body {
 }
 
 #box{
-float:left;
-height: 147px;
-width: 30%;
-background-color: white;
-padding: 6px;
+	float:left;
+	height: 147px;
+	width: 30%;
+	background-color: #E6E6E6;
+	padding: 6px;
 }
 #process{
 	padding: 8px;
-	height: 100px;
-	width: 97%; 
-	background:rgba(255,255,255, 0.5);
-
-	
+	margin-top: 10px;
+	height: auto;
+	width: 95%; 
+	background:rgba(255,255,255, 0.5);	
 }
 
 #result{
 	height:20px;
 	width:100%;
 	border-radius: 4px;
-	background-color: #ffffff;
+	background-color: #E6E6E6;
+}
+.step{
+	background:rgba(255,255,255, 0.5);
 }
 
 .drop {
