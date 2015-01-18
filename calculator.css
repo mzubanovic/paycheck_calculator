@@ -1,15 +1,19 @@
 body {
 	background-image: url('file:///home/marko/Pictures/calc.jpg');
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 #box{
 	float:left;
 	height: 147px;
-	width: 30%;
+	height: auto;
+	width: 30% ;
+	width: auto;
 	background-color: #E6E6E6;
 	padding: 6px;
 }
+
 #process{
 	padding: 8px;
 	margin-top: 10px;
@@ -20,9 +24,10 @@ body {
 
 #result{
 	height:20px;
-	width:100%;
+	width:80%;
 	border-radius: 4px;
 	background-color: #E6E6E6;
+	padding: 2%;
 }
 .step{
 	background:rgba(255,255,255, 0.5);
@@ -30,14 +35,17 @@ body {
 
 .drop {
 	margin:1%;
+	padding: 2%;
 }
 
 .input  {
 	margin:1%; 
+	padding: 2%;
 }
 
 button {
 	margin: 2%;
+	padding: 2%;
 }
 
 body {
@@ -49,10 +57,13 @@ body {
 }
 input {
 	border-radius: 4px;
+	padding: 2%;
 }
 select {
 	border-radius: 4px;
+	padding: 2%;
 }
 button  {
 	border-radius: 4px;
+	padding: 2%;
 }
