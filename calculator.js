@@ -22,7 +22,10 @@ function calculus(){
 
 	} else if (BrDjece == 1){
 
-		var osnovica_poreza0 = dohodak - 2600;
+		var odbitak = 2600
+		var odbitak_P = document.getElementById("odbitak");
+			odbitak_P.innerHTML = odbitak + " kn";
+		var osnovica_poreza0 = dohodak - odbitak;
 		var osnovica_poreza0_P = document.getElementById("osnovica_poreza");
 			osnovica_poreza0_P.innerHTML = osnovica_poreza0 + " kn";
 
@@ -74,7 +77,10 @@ function calculus(){
 
 	
 	}else if (BrDjece == 2){
-		var osnovica_poreza0 = dohodak - 1100 - 2600;
+		var odbitak = 2600 *1.5;
+		var odbitak_P = document.getElementById("odbitak");
+			odbitak_P.innerHTML = odbitak + " kn";
+		var osnovica_poreza0 = dohodak - odbitak;
 		var osnovica_poreza0_P = document.getElementById("osnovica_poreza");
 			osnovica_poreza0_P.innerHTML = osnovica_poreza0 + " kn";
 		
@@ -126,7 +132,10 @@ function calculus(){
 		}
 
 	}else if (BrDjece == 3){
-		var osnovica_poreza0 = dohodak - (1540 + 1100 + 2600) ; // olakšice za br djece se zbrajaju, ako je dohodak - olakšice 0, onda se ne oporezuje
+		var odbitak = 2600 *2.2;
+		var odbitak_P = document.getElementById("odbitak");
+			odbitak_P.innerHTML = odbitak + " kn";
+		var osnovica_poreza0 = dohodak - odbitak ; // olakšice za br djece se zbrajaju, ako je dohodak - olakšice 0, onda se ne oporezuje
 		var osnovica_poreza0_P = document.getElementById("osnovica_poreza");
 			osnovica_poreza0_P.innerHTML = osnovica_poreza0 + " kn";
 
