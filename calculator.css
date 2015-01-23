@@ -1,50 +1,66 @@
 body {
-	background-image: url('file:///home/marko/Pictures/calc.jpg');
+	background-image: url('calc.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
+
 #box{
-	float:left;
-	height: 147px;
-	height: auto;
-	width: 30% ;
-	width: auto;
+	
+	height: 100%;
+	width: 100% ;
 	background-color: #E6E6E6;
 	padding: 6px;
 }
 
+@media all and (max-width: 10000px) and (min-width: 500px) {
+#box {
+    width: 20%;
+    height: 100%;
+  }
+}
+
+
 #process{
 	padding: 8px;
-	margin-top: 10px;
+	margin-top: 8%;
 	height: auto;
 	width: 95%; 
+	width:auto;
 	background:rgba(255,255,255, 0.5);	
 }
 
 #result{
 	height:20px;
 	width:80%;
+	width:auto;
 	border-radius: 4px;
 	background-color: #E6E6E6;
 	padding: 2%;
+	margin:2%;
 }
+
 .step{
 	background:rgba(255,255,255, 0.5);
 }
 
 .drop {
-	margin:1%;
+	margin: 4%;
 	padding: 2%;
 }
 
-.input  {
-	margin:1%; 
+.input {
+	margin:2%; 
 	padding: 2%;
 }
 
-button {
-	margin: 2%;
+a {
+	margin:2%; 
+	padding: 2%;
+}
+
+#calc {
+	margin: 4%;
 	padding: 2%;
 }
 
