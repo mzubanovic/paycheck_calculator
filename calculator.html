@@ -2,59 +2,95 @@
 <html>
 
 <head>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel='stylesheet' href='calculator.css'/> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 	
 	
 </head>
 <body> 
-	<div id="box">
-		<form name="input" class ="input">Bruto iznos: <input id="inputBruto" ></form>
-	
-		<form>
-			<select class = "drop" id = "djeca">
-				<option value="0">Broj djece</option>
- 	 			<option value="1">0</option>
-  				<option value="2">1</option>
-  				<option value="3">2</option>
-			</select>		
-		</form>
+	<div class="row">
+		<div id="napomena">Napomena: Izračun je isključivo informativan te se kao takav ne može koristiti ni u jednu drugu svrhu. </div>
+		<div id="box">
+			<div class="col-md-2">
+				<form name="input" class ="input">Bruto iznos plaće: <input id="inputBruto" ></form>
+				<form name="input" class ="input">Bruto iznos bonusa: <input id="inputBrutoBonus" ></form>
+				<form name="input" class ="input">Prirez (%): <input id="inputPrirez" ></form>
+				<form>
+					<select class = "drop" id = "djeca">
+						<option value="0">Broj djece</option>
+	 	 				<option value="1">0</option>
+	  					<option value="2">1</option>
+	  					<option value="3">2</option>
+					</select>		
+				</form>
+				<button id="calc" onclick="calculus()">Izračunaj</button>
+				<div class="row">
+				<div class="col-md-12 ">
+						<div id = "boxA" class="box">
+							<div id="neto">Neto: 
+								<div id="resultPlaca" class = "result"></div>
+								<div id="resultBonus" class = "result"></div>
+							</div>
+							<div id="process" class="results">
+							<div>Odbitak: 
+									<div id="odbitak" class="step" ></div>
+								</div>
+								<div>Doprinosi: 
+									<div id="doprinosi" class="step" ></div>
+								</div>
+								<div>Dohodak: 
+									<div id="dohodak" class="step"></div>
+								</div>
+								<div>Osnovica poreza: 
+									<div id="osnovica_poreza" class="step"></div>
+								</div>
+								<div>Porez: 
+									<div id="porez" class="step"></div>
+								</div>
+								<div>Porez i prirez: 
+									<div id="porez_i_prirez" class="step"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<form name="input" class ="input">Neto osnovica plaće: <input id="inputOsnovica" ></form>
+				<form name="input" class ="input">Fond sati u mjesecu: <input id="inputFond" ></form>
+				<form name="input" class ="input">Koeficijent po satu: <input id="inputKoef" ></form>
+				<form name="input" class ="input">Broj prekovremenih sati: <input id="inputBrPrekovremenih" ></form>
+				<button id="calc2" onclick="calculus2()">Izračunaj</button>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-12">
+						<div class="box">
+							<div id="Prekovremeni" class = "results">Prekovremeni: 
+								<div id="result1Prekovremeni" class = "result"></div>
+								<div id="resultUkupnoPrekovremenih" class = "result"></div>
+							</div>
+						</div>
+					</div>
 
-		<form name="input" class ="input">Prirez (%): <input id="inputPrirez" ></form>
-		<div>
-			<a href="http://www.isplate.info/prirez.aspx" target='_blank'>Postotci po gradovima</a>
-		</div>
+				</div>
+			</div>
 
+			<div class="col-md-1"></div>
+			<div class="col-md-6">
+				<iframe src="http://www.isplate.info/prirez.aspx" width="100%"></iframe>
+				<a href="file:///home/marko/code/git_calc/paycheck_calculator/calculator.html" target="myIframe">Prirez prema gradovima</a>
+			</div>
+			<div class="row">
+					
+			</div>
 
-
-		<button id="calc" onclick="calculus()">Click me</button>
-		<hr>
-		<div>Neto: 
-			<div id="result"></div>
-		</div>
-		<div id="process">
-		<div>Odbitak: 
-				<div id="odbitak" class="step" ></div>
-			</div>
-			<div>Doprinosi: 
-				<div id="doprinosi" class="step" ></div>
-			</div>
-			<div>Dohodak: 
-				<div id="dohodak" class="step"></div>
-			</div>
-			<div>Osnovica poreza: 
-				<div id="osnovica_poreza" class="step"></div>
-			</div>
-			<div>Porez: 
-				<div id="porez" class="step"></div>
-			</div>
-			<div>Porez i prirez: 
-				<div id="porez_i_prirez" class="step"></div>
-			</div>
 		</div>	
 	</div>	
     <script src="calculator.js"></script>
